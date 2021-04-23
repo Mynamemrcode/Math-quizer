@@ -1,0 +1,15 @@
+.login_div1 , .login_div2
+	{
+        background:linear-gradient(#b8860b 0%, #b2280b);
+	padding: 10px;
+	float: none;
+	border-radius: 15px;
+}
+
+body {
+    background:linear-gradient(#536976 0%, #292E49 100%);   
+}
+img {
+    padding-right: 0px;
+ size: 500px;
+}

@@ -1,0 +1,13 @@
+body {
+    background: linear-gradient(45deg, #01a99c 10%, #0698b1 360%)
+}
+
+#output
+{
+background: #8e7a3f;
+border-radius: 10px;
+border-top: 10px solid #AA4465;
+padding: 10px;
+float: none;
+text-align: left;
+}
