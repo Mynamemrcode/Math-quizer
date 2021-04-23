@@ -11,3 +11,4 @@ document.getElementById("player@2score").innerHTML = player2score;
 
 document.getElementById("questionturn").innerHTML = "questionturn " + playername1;
 document.getElementById("answerturn").innerHTML ="answerturn " + playername2;
+
