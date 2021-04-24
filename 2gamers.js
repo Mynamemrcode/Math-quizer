@@ -20,7 +20,7 @@ function send() {
     console.log(realans);
 
     questionnum= "<h4>" + num1 + " x " + num2 +"</h4>";
-    inputbx = "<br> Your Answer: <input type='text' id='inputcheckbx";
+    inputbx = "<br> Your Answer: <input type='text' id='inputcheckbx'>";
     chkbtn = "<br><br><button class='btn btn-info' onclick='check()'>Check</button>";
     all = questionnum + inputbx + chkbtn;
 
