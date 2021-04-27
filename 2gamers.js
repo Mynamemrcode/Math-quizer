@@ -26,3 +26,37 @@ function send() {
 
     document.getElementById("output").innerHTML = all;
 }
+
+questionturn = "player1";
+answerturn = "player2";
+
+function check() {
+    getans = document.getElementById("inputcheckbx").value;
+    if(getans == realans) {
+        if(answerturn == "player1") {
+        player1score = player1score + 1;
+        document.getElementById("player@1score").innerHTML = player1score;
+        }
+        else {
+            player2score = player2score + 1;
+            document.getElementById("player@2score").innerHTML = player2score;
+        }
+    }
+    if(questionturn == "player1") {
+        questionturn = "player2";
+        document.getElementById("questionturn").innerHTML = "Question Turn " + playername2;
+    }
+    else {
+        questionturn = "player1";
+        document.getElementById("questionturn").innerHTML = "Question Turn " + playername1;
+    }
+
+    if(answerturn == "player2") {
+        questionturn = "player1";
+        document.getElementById("answerturn").innerHTML = "Anwser Turn " + playername1;
+    }
+    else {
+        questionturn = "player2";
+        document.getElementById("answerturn").innerHTML = "Answer Turn " + playername2;
+    }
+}
