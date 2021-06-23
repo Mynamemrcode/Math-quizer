@@ -3,11 +3,11 @@ playername2 = localStorage.getItem("playernew2");
 player1score = 0;
 player2score = 0;
 
-document.getElementById("player@1name").innerHTML = playername1;
-document.getElementById("player@2name").innerHTML = playername2;
+document.getElementById("player1name").innerHTML = playername1;
+document.getElementById("player2name").innerHTML = playername2;
 
-document.getElementById("player@1score").innerHTML = player1score;
-document.getElementById("player@2score").innerHTML = player2score;
+document.getElementById("player1score").innerHTML = player1score;
+document.getElementById("player2score").innerHTML = player2score;
 
 document.getElementById("questionturn").innerHTML = "questionturn " + playername1;
 document.getElementById("answerturn").innerHTML ="answerturn " + playername2;
@@ -35,11 +35,11 @@ function check() {
     if(getans == realans) {
         if(answerturn == "player1") {
         player1score = player1score + 1;
-        document.getElementById("player@1score").innerHTML = player1score;
+        document.getElementById("player1score").innerHTML = player1score;
         }
         else {
             player2score = player2score + 1;
-            document.getElementById("player@2score").innerHTML = player2score;
+            document.getElementById("player2score").innerHTML = player2score;
         }
     }
     if(questionturn == "player1") {
@@ -52,11 +52,12 @@ function check() {
     }
 
     if(answerturn == "player2") {
-        questionturn = "player1";
+        answerturn = "player1";
         document.getElementById("answerturn").innerHTML = "Anwser Turn " + playername1;
     }
     else {
-        questionturn = "player2";
+        answerturn = "player2";
         document.getElementById("answerturn").innerHTML = "Answer Turn " + playername2;
     }
+    document.getElementById("output").innerHTML = "";
 }
